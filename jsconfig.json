@@ -9,7 +9,7 @@
       "@styles/*": ["./src/styles/*"],
       "@assets/*": ["./assets/*"],
       "@redux/*": ["./src/redux/*"],
-      "@services/*": ["./src/firebase/*"],
+      "@services/*": ["./src/services/*"],
       "@utils/*": ["./src/utils/*"],
       "@lib/*": ["./src/lib/*"],
       "@hooks/*": ["./src/hooks/*"]

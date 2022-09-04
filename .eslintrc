@@ -35,7 +35,11 @@
       "alias": {
         "map": [
           ["@routes", "./src/routes"],
-          ["@pages", "./src/pages"]
+          ["@pages", "./src/pages"],
+          ["@redux", "./src/redux"],
+          ["@components", "./src/components"],
+          ["@services", "./src/services"],
+          ["@styles", "./src/styles"]
         ],
         "extensions": [".js", ".jsx", ".json", ".css"]
       }
