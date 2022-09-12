@@ -1,8 +1,9 @@
 import { actions } from '@redux/authSlice';
-import { auth } from '@services/firebase/firebase';
+import { auth } from '@services/firebase/auth';
 import { useCallback, useEffect, useMemo } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import UserAdapter from '@adapters/UserAdapter';
 
 const useAuthStore = () => {
   const dispatch = useDispatch();
@@ -19,7 +20,7 @@ const useAuthStore = () => {
   );
 
   useEffect(() => {
-    if (userInfo !== null) setAuth(userInfo);
+    if (userInfo !== null) setAuth(UserAdapter(userInfo));
   }, [userInfo, setAuth]);
 
   const value = useMemo(

@@ -1,32 +1,15 @@
 import { initializeApp } from 'firebase/app';
-import {
-  getAuth,
-  GoogleAuthProvider,
-  signInWithPopup,
-  signOut,
-} from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyC8huOznA7o7pio7uUqTopMl2-rk9y7i4s',
-  authDomain: 'postsipsum.firebaseapp.com',
-  projectId: 'postsipsum',
-  storageBucket: 'postsipsum.appspot.com',
-  messagingSenderId: '10814487194',
-  appId: '1:10814487194:web:6ed8bd30c494333dfd3d23',
+  apiKey: import.meta.env.VITE_APP_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_APP_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
 const firebase = initializeApp(firebaseConfig);
-const auth = getAuth(firebase);
-const provider = new GoogleAuthProvider();
 
-const signInWithGoogle = async () => {
-  const result = await signInWithPopup(auth, provider);
-  console.log(result);
-};
-
-const logout = async () => {
-  await signOut(auth);
-};
-
-export { firebase, auth, provider, signInWithGoogle, logout };
+export default firebase;
