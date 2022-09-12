@@ -1,0 +1,25 @@
+:root {
+  --primary-white: #eceff1;
+  --second-white: #fafafb;
+
+  --primary-dark: #343a40;
+  --second-dark: #2d2d2d;
+  --third-dark: #202020;
+
+  --primary-gray: #455560;
+  --second-gray: #888888;
+
+  --primary-blue: #0066ff;
+  --second-blue: #2270b4;
+  --third-blue: #349eff;
+  --light-blue: #62b4ff;
+
+  --primary-red: #fb0b12;
+  --second-red: #ff4a6b;
+
+  --primary-cyan: #10d4d2;
+  --second-cyan: #2ae9e6;
+
+  --primary-green: #019707;
+  --second-green: #4caf50;
+}
