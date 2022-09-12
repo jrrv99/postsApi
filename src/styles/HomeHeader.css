@@ -1,0 +1,59 @@
+.header {
+  justify-content: space-around;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.profile__menu {
+  width: max-content;
+  max-height: 0rem;
+  padding: 0rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--second-white);
+  border-radius: 0.75rem;
+  box-shadow: var(--box-shadow-dark);
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.6s;
+}
+
+.profile__menu--open {
+  max-height: 25rem;
+  padding: 1rem;
+}
+
+.profile__nav__item {
+  display: flex;
+  align-items: center;
+  padding-block: 0.75rem;
+  padding-inline: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  gap: 1rem;
+  color: #525252;
+}
+
+.profile__nav__item__icon {
+  display: grid;
+  place-items: center;
+  background-color: #e5e5e5;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+@media screen and (hover) {
+  .profile__nav__item:hover p {
+    font-weight: 600;
+  }
+}
