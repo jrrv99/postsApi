@@ -1,0 +1,7 @@
+.comment {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--second-white, #fff);
+  border-radius: var(--border-radius, 2rem);
+  box-shadow: var(--box-shadow-primary);
+}
