@@ -1,0 +1,22 @@
+.wrapper {
+  display: grid;
+  place-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.Loader {
+  width: fit-content;
+  padding: 2rem;
+  border: 5px solid #fff;
+  border-top-color: var(--premium);
+  border-bottom-color: var(--premium);
+  border-radius: 50%;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}

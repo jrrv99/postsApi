@@ -1,0 +1,39 @@
+/* Text sizes */
+.Text {
+  text-transform: capitalize;
+  text-align: justify;
+}
+
+.small {
+  font-size: var(--text-small, 0.5rem);
+}
+
+.medium {
+  font-size: var(--text-medium, 0.75rem);
+}
+
+.normal {
+  font-size: var(--text-normal, 1rem);
+}
+
+.big {
+  font-size: var(--text-big, 1.25rem);
+}
+
+/* Text Types */
+.soft {
+  color: var(--text-soft, #606060);
+  font-weight: 300;
+}
+
+.default {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.bolder {
+  font-weight: 700;
+}
