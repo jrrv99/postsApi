@@ -11,6 +11,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
+      '@': resolve(__dirname, './src'),
       '@assets': resolve(__dirname, './src/assets'),
       '@components': resolve(__dirname, './src/components'),
       '@pages': resolve(__dirname, './src/pages'),
@@ -19,6 +20,8 @@ export default defineConfig({
       '@services': resolve(__dirname, './src/services'),
       '@redux': resolve(__dirname, './src/redux'),
       '@hooks': resolve(__dirname, './src/hooks'),
+      '@adapters': resolve(__dirname, './src/adapters'),
+      '@api': resolve(__dirname, './src/api'),
     },
   },
 });

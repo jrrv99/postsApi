@@ -23,7 +23,9 @@
     "sourceType": "module"
   },
   "plugins": ["promise", "react", "react-hooks", "jsx-a11y", "import"],
-  "rules": {},
+  "rules": {
+    "react/no-unknown-property": ["error", { "ignore": ["key"] }]
+  },
   "settings": {
     "react": {
       "version": "detect"
@@ -34,12 +36,16 @@
       },
       "alias": {
         "map": [
+          ["@", "./src"],
           ["@routes", "./src/routes"],
           ["@pages", "./src/pages"],
           ["@redux", "./src/redux"],
           ["@components", "./src/components"],
           ["@services", "./src/services"],
-          ["@styles", "./src/styles"]
+          ["@adapters", "./src/adapters"],
+          ["@styles", "./src/styles"],
+          ["@api", "./src/api"],
+          ["@hooks", "./src/hooks"]
         ],
         "extensions": [".js", ".jsx", ".json", ".css"]
       }

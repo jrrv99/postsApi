@@ -3,6 +3,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
+      "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
       "@pages/*": ["./src/pages/*"],
       "@routes/*": ["./src/routes/*"],
@@ -12,6 +13,8 @@
       "@services/*": ["./src/services/*"],
       "@utils/*": ["./src/utils/*"],
       "@lib/*": ["./src/lib/*"],
+      "@adapters/*": ["./src/adapters/*"],
+      "@api/*": ["./src/api/*"],
       "@hooks/*": ["./src/hooks/*"]
     }
   }
