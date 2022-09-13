@@ -1,0 +1,35 @@
+.login {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  gap: 2rem;
+  background-color: var(--bg-primary);
+  color: var(--txt-color);
+}
+
+.login__card {
+  display: grid;
+  min-width: 18rem;
+  padding: 2rem;
+  place-items: center;
+  background-color: var(--second-white);
+  border-radius: 0.75rem;
+  box-shadow: var(--box-shadow-primary);
+}
+
+.login__card__provider,
+.login__card__provider--inactive {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
+  gap: 1rem;
+  place-items: center;
+  user-select: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.login__card__provider--inactive {
+  color: #333;
+  opacity: 0.6;
+}

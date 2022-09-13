@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  height: var(--header-height);
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 9;
+
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.5);
+}

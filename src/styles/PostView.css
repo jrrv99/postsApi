@@ -1,0 +1,71 @@
+.postview {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 5vw;
+  padding-block: 2rem;
+  align-content: center;
+}
+
+.postViewCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-color: var(--second-white, #fff);
+  border-radius: var(--border-radius, 2rem);
+  box-shadow: var(--box-shadow-primary);
+  overflow: hidden;
+}
+
+.card__img {
+  border-radius: var(--border-radius, 2rem);
+}
+
+.post__details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  justify-items: center;
+}
+
+.card__details {
+  display: flex;
+  width: 100%;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.post__chips {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  gap: 0.25rem;
+  align-items: center;
+  color: white;
+  border-radius: var(--border-radius, 2rem);
+  overflow: hidden;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  color: var(--second-white, #fff);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 380px) {
+  .postview {
+    padding-inline: 0;
+  }
+
+  .postViewCard {
+    width: 100vw;
+  }
+
+  .card__img {
+    width: 20rem;
+  }
+}
